@@ -1,41 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW07_part02</title>
-</head>
-<body>
-    <div class="container">
 
-        <header>
-          <h1>ILLINOIS ART SOCIETY</h1>
-          jj
-        </header>
-    
-       <nav>
-          <ul>
-            <li>Home</li>
-            <br><br>
-            <li><a href="http://www.artic.edu">Art Institute of Chicago</a></li>
-            <li><a href="http://www.metmuseum.org">Metropolitan Museum of Modern Art</a></li>
-            <li><a href="http://www.dia.org">Detroit Institute of Arts</a></li>
-            <br>
-            <br>
-            <li><a href="ILArt_Form.htm">Support</a></li>
-            <br><br><br><br><br>
-            <li>About</li>
-    
-          </ul>
-        </nav>
-        <audio controls>
-            <source src="horse.ogg" type="audio/ogg">
-            <source src="horse.mp3" type="audio/mpeg">
-          </audio>
-          <br><br>
-        <object data="ford-mustang.png">
-        </object>
-        <br><br>
-        
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW07_part02</title>
+  <style>
+    body {
+      background-color: #b0b0d177;
+    }
+
+    p {
+      text-align: justify;
+
+    }
+
+    .container {
+      margin: 0 auto;
+      width: 40%;
+    }
+
+    data {
+      clear: both;
+      margin: 0 auto;
+      padding: 2% 3% 5% 21%;
+    }
+
+    .box-container {
+      width: 100%;
+      padding: 2%;
+      margin: 2%;
+      flex-direction: row;
+    }
+
+    .box {
+      width: 60%;
+      margin: 0 auto;
+      clear: both;
+      padding: 2%;
+
+    }
+
+    .box>img {
+      flex: 1;
+      width: 30%;
+      float: left;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+
+
+  <header>
+    <h1 style="background: cornflowerblue; padding: 2%; text-align: center;">Muscle Car Society</h1>
+
+  </header>
+  <nav>
+    <ul>
+     <li><a href="#home">Home</a></li>
+     <li><a href="#news">News</a></li>
+     <li><a href="#contact">Contact</a></li>
+     <li><a href="#about">About</a></li>
+    </ul>
+   </nav>
+  <div width="100%">
+    <div class="container">
+      <p>Muscle Car Society is a group for classic muscle car enthusiasts and collectors who are passionate about
+        building and driving muscle cars.The Group was created focusing on restoration, the latest industry news, and
+        additional coverage of high-performance cars.</p>
+      <br><br>
+      <object data="ford-mustang.png">
+      </object>
+      <br><br>
+      <audio controls>
+        <source src="ferrari-sound-effect.mp3" type="audio/mpeg">
+      </audio>
+      <br>
+      <object width="300" height="200">
+        <param name="movie" value="file.swf">
+        <embed src="file.swf" width="300" height="250">
+        </embed>
+      </object>
+      <br><br>
+      <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+
+
+      </video>
+      <br><br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LdWs4PMOViE" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <br><br>
+    </div>
+  </div>
+
+  <div class="box-container">
+    <div class="box">
+      <img src="chevy.jpg" alt="car1">
+      <img src="mc.jpg" alt="car2">
+      <img src="red.jpg" alt="car3">
+    </div>
+  </div>
 </body>
+
 </html>
